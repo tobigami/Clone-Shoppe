@@ -1,0 +1,158 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+  .hide-on-tablet-mobile {
+    display: none;
+  }
+
+  :root {
+    --header-height: 70px;
+    --header-nav: 0px;
+  }
+
+  .app {
+    margin-top: calc(var(--header-height) + var(--header-soft-bar-height));
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  .header-cart-list {
+    position: fixed;
+    width: 100%;
+    top: var(--header-height);
+    right: 0;
+    padding: 0 calc((100% - 644px) / 2);
+  }
+
+  .header-cart-list::before {
+    display: none;
+  }
+
+  .header-soft-bar {
+    display: block;
+  }
+
+  .app__container-row {
+    padding-top: 10px;
+  }
+
+  .mobile-category {
+    display: block;
+  }
+}
+
+/* table */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .header-cart {
+    padding: 0 19.5px;
+  }
+
+  .home-product-item {
+    margin-top: 16px;
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .header-with-search {
+    justify-content: space-between;
+  }
+
+  .header-mobile-search {
+    display: block;
+  }
+
+  .header-logo {
+    width: unset;
+  }
+
+  .header-logo-img {
+    width: 110px;
+  }
+
+  .header-cart {
+    padding: 0;
+  }
+
+  .header-search {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: var(--header-height);
+    padding: 0 8px;
+    animation: mobileSearchSideIn ease-in 0.3s;
+    display: none;
+  }
+
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      /* top: calc(var(--header-height) / 2); */
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      top: var(--header-height);
+      height: 48px;
+    }
+  }
+
+  .pagination-item {
+    margin: 0;
+  }
+
+  .pagination-item-link {
+    --height: 28px;
+    font-size: 1.4rem;
+    min-width: 28px;
+  }
+
+  .app__container-row {
+    margin: 0 4px;
+  }
+
+  .footer-content {
+    padding-left: 10px;
+  }
+
+  .header-search.open {
+    display: flex;
+  }
+
+  .header-search-selection {
+    display: none;
+  }
+
+  .header-search-history {
+    width: 100%;
+  }
+
+  .header-search-btn {
+    display: none;
+  }
+  .footer-heading {
+    text-align: center;
+  }
+
+  .footer-download-app {
+    flex: 0;
+  }
+
+  .footer-download,
+  .footer-item a {
+    justify-content: center;
+  }
+}
