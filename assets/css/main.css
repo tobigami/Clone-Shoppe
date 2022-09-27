@@ -499,10 +499,6 @@ Modal Auth-form
   justify-content: flex-end;
 }
 
-.btn.btn--primary {
-  /* margin-left: 8px; */
-}
-
 .btn--primary {
   background-color: #000;
   color: #f53e2d;
